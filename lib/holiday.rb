@@ -66,6 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
         i = 0 
         while i < humanized_holiday.length 
           humanized_holiday[i].capitalize
+          binding.pry 
           i += 1 
         end 
         humanized_holiday = humanized_holiday.join(' ')
