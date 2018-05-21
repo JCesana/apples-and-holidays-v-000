@@ -62,7 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
     
     holidays.each do |holiday, supplies|
       if holiday.to_s.include?('_')
-        humanized_holiday = holiday.split('_')
+        humanized_holiday = holiday.to_s.split('_')
         i = 0 
         while i < humanized_holiday.length 
           humanized_holiday[i].capitalize
