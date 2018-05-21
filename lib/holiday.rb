@@ -69,6 +69,8 @@ def all_supplies_in_holidays(holiday_hash)
           i += 1 
         end 
         humanized_holiday = humanized_holiday.join(' ')
+      else 
+        humanized_holiday = holiday.to_s.capitalize
       end 
       
       text = "  #{humanized_holiday}: " + holiday_hash[season][holiday].join(', ')
