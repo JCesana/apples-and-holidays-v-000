@@ -74,7 +74,6 @@ def all_supplies_in_holidays(holiday_hash)
       text = "  #{humanized_holiday}: " + holiday_hash[season][holiday].join(', ')
       puts text 
     end 
-    
   end 
   
 end
